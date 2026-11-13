@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes rclone — private file-transfer utility</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0f1115; color: #d7dbe0;
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.25rem 6rem; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; color: #fff; letter-spacing: -.01em; }
+  .sub { color: #8b939e; margin: 0 0 2.5rem; font-size: .95rem; }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .08em;
+       color: #7f8792; margin: 2.5rem 0 .75rem; }
+  p, li { margin: .6rem 0; }
+  ul { padding-left: 1.15rem; }
+  a { color: #6ea8fe; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid #232833;
+           color: #6b7280; font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hermes rclone</h1>
+  <p class="sub">A private, single-user file-transfer utility.</p>
+
+  <h2>What it does</h2>
+  <p>Hermes rclone is a personal command-line utility built on
+     <a href="https://rclone.org/">rclone</a>. Its only function is to move files between a
+     single person's own computer and that same person's own Google Drive — downloading a file the
+     owner has uploaded, and uploading a result back to the owner's Drive.</p>
+
+  <h2>Who uses it</h2>
+  <p>Exactly one person: the owner of the Google account that authorises it. The utility is not
+     distributed, not published in any app store, and not offered to other users. There is no
+     sign-up, no account system and no server-side component owned by the author.</p>
+
+  <h2>What it accesses</h2>
+  <ul>
+    <li>Google Drive files belonging to the account that grants access, via the
+        <code>https://www.googleapis.com/auth/drive</code> scope.</li>
+    <li>Nothing else: no Gmail, no Calendar, no contacts, no Google account profile data.</li>
+  </ul>
+
+  <h2>Data handling</h2>
+  <p>Files are transferred directly between the owner's computer and the owner's Drive. The author
+     runs no servers, collects no analytics, and receives no copies of any file. Authorisation tokens
+     are stored locally on the owner's own machine. Full detail on the
+     <a href="privacy.html">privacy policy</a> page.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> · Last updated 12 November 2026
+  </footer>
+</main>
+</body>
+</html>

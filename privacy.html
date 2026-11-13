@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Hermes rclone</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0f1115; color: #d7dbe0;
+         font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.25rem 6rem; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; color: #fff; letter-spacing: -.01em; }
+  .sub { color: #8b939e; margin: 0 0 2.5rem; font-size: .95rem; }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .08em;
+       color: #7f8792; margin: 2.5rem 0 .75rem; }
+  p, li { margin: .6rem 0; }
+  ul { padding-left: 1.15rem; }
+  a { color: #6ea8fe; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid #232833;
+           color: #6b7280; font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="sub">Hermes rclone · last updated 12 November 2026</p>
+
+  <p>Hermes rclone is a private desktop utility used by one person to transfer files between their
+     own computer and their own Google Drive. This policy describes what it does with data.</p>
+
+  <h2>1. Data collected</h2>
+  <p>None. The utility has no analytics, no telemetry, no cookies, no advertising and no crash
+     reporting. It does not create a user profile and does not transmit information to the author.</p>
+
+  <h2>2. Google user data</h2>
+  <ul>
+    <li><strong>What is accessed:</strong> files and folders in the Google Drive of the account that
+        authorises the utility, using the <code>drive</code> scope.</li>
+    <li><strong>Why:</strong> solely to download files the account owner has placed there, and to
+        upload results back to the same Drive.</li>
+    <li><strong>Where it goes:</strong> nowhere else. Files move directly between the owner's computer
+        and the owner's Drive over Google's API. The author operates no server that receives,
+        stores or inspects them.</li>
+    <li><strong>What is stored locally:</strong> an OAuth access token and refresh token, on the
+        owner's own machine, readable only by that user account. No file contents are cached beyond
+        the working copy the owner asked for.</li>
+  </ul>
+
+  <h2>3. Sharing</h2>
+  <p>No data is sold, rented, shared, or disclosed to any third party. There is no third party
+     involved at all beyond Google's own API.</p>
+
+  <h2>4. Retention and deletion</h2>
+  <p>Files remain in the owner's Google Drive under the owner's control; deleting them from Drive (or
+     emptying the Drive trash) deletes them. Local working copies can be removed at any time by
+     deleting them from disk. Authorisation can be revoked at
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, which
+     invalidates the stored tokens immediately.</p>
+
+  <h2>5. Limited use</h2>
+  <p>The utility's use of information received from Google APIs adheres to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+     User Data Policy</a>, including the Limited Use requirements. Google user data is used only to
+     provide the file-transfer function described above.</p>
+
+  <h2>6. Changes</h2>
+  <p>Any change to this policy will be published on this page with a new "last updated" date.</p>
+
+  <footer>
+    <a href="index.html">Back to home</a> · Hermes rclone
+  </footer>
+</main>
+</body>
+</html>
